@@ -1,0 +1,154 @@
+.recipe-content {
+  width: 70%;
+  background-color: $color-background-dark;
+  .error {
+    margin: 5rem;
+    &-message {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $color-primary;
+    }
+  }
+  .start-message {
+    font-size: 1.8rem;
+    margin-top: 6rem;
+    font-weight: 600;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.6;
+    i {
+      color: $color-primary;
+      font-size: 2.4rem;
+      padding-right: 4px;
+    }
+  }
+  .hidden {
+    display: none;
+  }
+  .recipe {
+    &-header {
+      background-position: center;
+      background-size: cover;
+      height: 30rem;
+      position: relative;
+      &::before {
+        content: "";
+        background-image: $color-gradient;
+        opacity: .6;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+      }
+    }
+    &-title {
+      color: white;
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      position: absolute;
+      max-width: 60%;
+      left: 50%;
+      bottom: -3rem;
+      transform: translateX(-50%) skewY(-6deg);
+      text-align: center;
+      line-height: 1.6;
+      span {
+        background-image: $color-gradient;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        padding: 1rem 2rem;
+      }
+    }
+    &-data {
+      background-color: $color-background;
+      padding: 7rem 5rem 4rem;
+      display: flex;
+      align-items: center;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+    }
+    &-info {
+      margin-right: 5rem;
+      display: inline-flex;
+      align-items: center;
+      i {
+        color: $color-primary;
+        padding-right: 1rem;
+      }
+      span {
+        font-weight: 700;
+        padding-right: 6px;
+      }
+      .btn {
+        margin-left: 1rem;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid $color-primary;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          padding: 0;
+          font-size: 1rem;
+        }
+      }
+    }
+    .bookmark-btn {
+      margin-left: auto;
+      background-image: $color-gradient;
+      font-size: 2rem;
+      color: white;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+    }
+    .title1 {
+      color: $color-primary;
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    &-ingredients {
+      margin: 3rem 4rem;
+      overflow-x: auto;
+      &-list {
+        padding-left: 0;
+        padding-top: 3rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 40rem;
+        font-size: 1.8rem;
+        li {
+          padding: 2rem;
+          text-transform: capitalize;
+          max-width: 45%;
+        }
+        i {
+          color: $color-primary;
+          padding-right: 1rem;
+        }
+      }
+    }
+    &-prep {
+      text-align: center;
+      padding-top: 3rem;
+      background-color: $color-background;
+    }
+    &-instructions {
+      font-size: 1.8rem;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3rem;
+    }
+    &-author {
+      color: $color-primary;
+    }
+  }
+}

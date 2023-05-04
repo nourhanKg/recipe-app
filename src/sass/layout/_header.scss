@@ -1,0 +1,55 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-background;
+    padding: 0 4rem;
+    height: 10rem;
+    .logo {
+        width: 15rem;
+        img {
+            width: 100%;
+        }
+    }
+}
+.form {
+    background-color: white;
+    border-radius: 5rem;
+    overflow: hidden;
+    display: flex;
+    &-input {
+        border: none;
+        padding: 1.5rem;
+        color: inherit;
+        font-size: 1.7rem;
+        font-family: inherit;
+        width: 30rem;
+        &::placeholder {
+            color: $color-placeholder;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+.nav {
+    &-menu {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+    }
+    &-item {
+        margin: 0 2rem;
+        height: 100%;
+    }
+    &-btn {
+        height: 10rem;
+    }
+    .bookmarks:hover,
+    &-btn:hover + .bookmarks {
+        visibility: visible;
+        // display: flex;
+        opacity: 1;
+    }
+}

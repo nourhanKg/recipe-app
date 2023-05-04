@@ -1,0 +1,74 @@
+.bookmarks {
+  position: absolute;
+  color: $color-primary;
+  background-color: white;
+  width: 40rem;
+  right: 0;
+  top: 10rem;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 20rem;
+  overflow-y: auto;
+  .start-message {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.6;
+    padding: 6rem 4rem 4rem;
+  }
+}
+.bookmarks-list {
+  margin: 2rem 0;
+  list-style: none;
+  padding-left: 0;
+  .preview {
+    padding: 1.5rem 3rem;
+    &-active {
+      background-color: $color-background-dark;
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    &-fig {
+      margin-right: 2rem;
+      position: relative;
+      &::after {
+        content: "";
+        background-image: $color-gradient;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        opacity: .6;
+      }
+      img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+      }
+    }
+    &-data {
+      width: calc(100% - 8rem);
+      font-weight: 600;
+    }
+    &-title {
+      color: $color-primary;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+    &-author {
+      color: $color-text-lighter;
+      font-size: 1.2rem;
+    }
+  }
+}

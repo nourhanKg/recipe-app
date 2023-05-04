@@ -1,0 +1,61 @@
+.footer {
+  background-color: rgb(51, 51, 51);
+  padding: 3rem 10%;
+  padding-bottom: 8rem;
+  color: white;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  @include responsive(tab-port) {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .footLogo {
+    width: 100%;
+    padding: 5rem 0 8rem;
+    picture {
+      width: 15rem;
+    }
+  }
+  .contacts {
+    width: calc(50% - 6rem);
+    padding-top: 3rem;
+    border-top: 1px solid white;
+    @include responsive(tab-port) {
+      width: 100%;
+      padding: 6rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 2rem 0;
+      li {
+        align-self: center;
+        &:not(:last-of-type) {
+          padding-right: 1rem;
+        }
+        a:visited,
+        a:link{
+          color: white;
+        }
+        a:hover,
+        a:focus,
+        a:active {
+          color: $color-darkGreen;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .rights {
+    width: calc(50% - 6rem);
+    padding-top: 3rem;
+    border-top: 1px solid white;
+    line-height: 1.6;
+    @include responsive(tab-port) {
+      width: 100%;
+    }
+  }
+}

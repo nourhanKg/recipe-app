@@ -1,0 +1,65 @@
+// html {
+//     font-size: 62.5%;
+//     @include responsive(tab-land) {
+//         font-size: 60%;
+//     }
+//     @include responsive(tab-port) {
+//         font-size: 50%;
+//     }
+//     @include responsive(phone) {
+//         font-size: 31.25%;
+//     }
+//     @include responsive(big) {
+//         font-size: 100%;
+//     }
+// }
+// body {
+//     font-family: 'Lato', sans-serif;
+//     font-weight: 400;
+//     color: $color-text;
+//     padding: 3rem;
+//     overflow: visible;
+//     margin: 0;
+//     box-sizing: border-box;
+//     z-index: -1;
+//     @include responsive(phone) {
+//         padding: 0;
+//     }
+// } 
+// *,
+// *::after,
+// *::before{
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+//     transition: all .3s linear;
+//     box-sizing: inherit;
+// }
+// p {
+//     margin: 2rem 0;
+//     font-size: 1.6rem;
+//     line-height: 1.6;
+//     @include responsive(tab-port) {
+//         font-size: 2rem;
+//     }
+// }
+// a:link,
+// a:visited {
+//     text-decoration: none;
+//     display: inline-block;
+//     text-transform: uppercase;
+// }
+html {
+  font-size: 62.5%;
+}
+body {
+  color: $color-text;
+  box-sizing: border-box;
+  font-family: $font-main;
+  font-weight: 400;
+  background-image: $color-gradient;
+}
+* {
+  margin: 0;
+  padding: 0;
+}

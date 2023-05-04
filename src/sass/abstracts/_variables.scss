@@ -1,0 +1,15 @@
+//color scheme
+$color-primary: #f38e82;
+$color-grad-1: #fbdb89;
+$color-grad-2: #f48982;
+
+$color-background: #f9f5f3; // Light background
+$color-background-dark: #f2efee; // Light lines
+$color-placeholder: #d3c7c3; // Light text (placeholder)
+$color-text: #615551; // Normal text
+$color-text-lighter: #918581; // Lighter text
+
+$color-gradient: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
+
+//font
+$font-main: 'Nunito Sans', sans-serif;

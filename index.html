@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A website for finding different recipes for different dishes.">
+  <meta name="author" content="Nourhan A.AboElenen">
+  <meta name="keywords" content="Food, Recipe, Eat, Cooking, Meals">
+  <title>Forkify</title>
+  <link rel="shortcut icon" type="image/png" href="src/img/favicon.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet"/> <!--google font-->
+  <link href="src/css/main.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5ed78bfa33.js" crossorigin="anonymous"></script> <!--fontawesome icons-->
+  <script defer src="src/js/controller.js" type="module"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <a href="#"><img src="src/img/logo.png" alt="forkify-logo"></a>
+      </div>
+      <form class="form search-form">
+        <input type="text" class="form-input search-input" placeholder="Search over 1,000,000 recipes...">
+        <button class="btn search-btn"><i class="fas fa-search"></i> Search</button>
+      </form>
+      <nav class="nav nav-bar">
+        <ul class="nav-menu">
+          <!-- <li class="nav-item"><button class="btn nav-btn"><i class="far fa-edit"></i> Add Recipe</button></li> -->
+          <li class="nav-item"><button class="btn nav-btn nav-bookmark"><i class="far fa-bookmark"></i> Bookmarks</button>
+            <div class="bookmarks">
+              <p class="start-message"><i class="fas fa-exclamation-triangle"></i> No bookmarks yet, find a nice recipe and bookmark it!</p>
+              <ul class="bookmarks-list">
+      
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="overlay hidden">
+      <form class="form new-recipe-form">
+        <div class="new-recipe-data">
+          <h4 class="title1">Recipe Data</h4>
+          <div class="input">
+            <label for="title">Title</label>
+            <input id="title" type="text" placeholder="name" class="form-input">
+          </div>
+          <div class="input">
+            <label for="url">URL</label>
+            <input id="url" type="url" placeholder="htttp//" class="form-input">
+          </div>
+          <div class="input">
+            <label for="Ing3">Image URL</label>
+            <input id="img-url" type="url" placeholder="" class="form-input">
+          </div>
+          <div class="input">
+            <label for="publisher">Publisher</label>
+          <input id="publisher" type="" placeholder="" class="form-input">
+          </div>
+          <div class="input">
+            <label for="preperation">Prep Time</label>
+            <input id="preperation" type="number" placeholder="60" class="form-input">
+          </div>
+          <div class="input">
+            <label for="servings">Servings</label>
+            <input id="servings" type="number" placeholder="4" class="form-input"> 
+          </div>
+        </div>
+        <div class="new-recipe-ingredients">
+          <h4 class="title1">Recipe Ingredients</h4>
+          <div class="input">
+            <label for="Ing1">Ingredient1</label>
+            <input id="Ing1" type="text" placeholder="Ex: Quantity, Unit, Description" class="form-input">
+          </div>
+          <div class="input">
+            <label for="Ing2">Ingredient2</label>
+            <input id="Ing2" type="text" placeholder="3, cups, low fat milk" class="form-input">
+          </div>
+          <div class="input">
+            <label for="Ing3">Ingredient3</label>
+            <input id="Ing3" type="text" placeholder="" class="form-input">
+          </div>
+          <div class="input">
+            <label for="Ing4">Ingredient4</label>
+          <input id="Ing4" type="text" placeholder="" class="form-input">
+          </div>
+          <div class="input">
+            <label for="Ing5">Ingredient5</label>
+            <input id="Ing5" type="text" placeholder="" class="form-input">
+          </div>
+          <div class="input">
+            <label for="Ing6">Ingredient6</label>
+            <input id="Ing6" type="text" placeholder="" class="form-input"> 
+          </div>
+        </div>
+        <button class="btn search-btn"><i class="fas fa-cloud-upload-alt"></i> Upload</button>
+        <button class="btn close-btn"><i class="fas fa-times"></i></button>
+      </form>
+    </div>
+    <main class="search">
+      <aside class="search-content">
+        <ul class="search-results">
+          
+        </ul>
+        <div class="pagination">
+          
+        </div>
+        <footer class="footer">&copy; Copyright by <a href="https://nourhankg.github.io/MyPortfolio/Portfolio/index.html" class="website" target="_blank">Nourhan A.AboElenen</a>. Thanks to Jonas Schmedtmann.</footer>
+      </aside>
+      <section class="recipe-content">
+        <p class="start-message"><i class="far fa-smile"></i> Start by searching for a recipe or an ingredient. Have fun!</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

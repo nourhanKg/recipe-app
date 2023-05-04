@@ -1,0 +1,69 @@
+// @mixin btnHover {
+//     &:hover {
+//         transform: translateY(-.3rem);
+//         box-shadow: 0 .7rem 1.2rem 0 rgba(0, 0, 0, .3);
+//     }
+// }
+// @mixin btnActive {
+//     &:active {
+//         transform: translateY(-.1rem);
+//         box-shadow: 0 .2rem 1rem 0 rgba(0, 0, 0, .3);
+//     }
+// }
+// @mixin greenBackground($myImage) {
+//     background-image: linear-gradient(
+//         to right bottom,
+//         rgba($color-lightGreen, .75), 
+//         rgba($color-darkGreen, .75)), 
+//         url($myImage);
+//     background-size: cover;
+//     background-position: center;
+// }
+// @mixin gradientColors {
+//     background-image: linear-gradient(
+//         to right,
+//         $color-lightGreen,
+//         $color-darkGreen);
+//     -webkit-background-clip: text;
+//     background-clip: text;
+//     color: transparent;
+//     display: inline-block;
+// }
+// @mixin backGroundWithColor ($color, $image) {
+//     background-image: url($image);
+//     background-size: cover;
+//     background-position: center;
+//     background-color: $color;
+//     background-blend-mode: screen;
+// }
+
+// //media quiery 
+// /* 
+// 0-600 mobile
+// 600-900 tablet portrait
+// 900-1200 tablet landscape midscreen
+// 1200-1800 desktop
+// 1800+ large screens
+// */
+// @mixin responsive($device) {
+//     @if $device == phone {
+//         @media only screen and (max-width: 37.5em) {
+//             @content
+//         };
+//     }
+//     @if $device == tab-port {
+//         @media only screen and (max-width: 56.25em) {
+//             @content
+//         };
+//     }
+//     @if  $device == tab-land {
+//         @media only screen and (max-width: 75em) {
+//             @content
+//         };
+//     }
+//     @if $device == big {
+//         @media only screen and (min-width: 112.5em) {
+//             @content
+//         };
+//     }
+// }
